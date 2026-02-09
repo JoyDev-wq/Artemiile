@@ -1,0 +1,19 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+@font-face{
+    font-family: "font-1";
+    src: url('./assets/NeueMontreal-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "font-2";
+    src: url('./assets/PexelGrotesk-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}

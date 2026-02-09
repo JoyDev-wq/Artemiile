@@ -1,0 +1,102 @@
+.projects {
+  padding-top: 3rem;
+  width: 100%;
+  height: 380vh;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  margin-left: 2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.left .project-map{
+    height: fit-content;
+}
+.left .container {
+  width: 24vw;
+  height: 56vh;
+}
+.container .bg-img {
+  position: absolute;
+}
+.bg-img img {
+  width: 24vw;
+  height: 56vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container:hover .vid{
+    opacity: 1;
+}
+.vid {
+  position: relative;
+  font-family: "font-1";
+  width: 24vw;
+  height: 56vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  gap: 1rem;
+  transition: opacity 0.6s ease;
+}
+.vid .heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.video video {
+  height: 30vh;
+  width: 24vw;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.vid .skills {
+  padding: 1rem;
+  font-family: "font-1";
+}
+
+
+
+
+.right {
+  width: 40%;
+  /* background-color: rgb(14, 21, 227); */
+}
+
+.right #heading {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw 2vw;
+  font-family: "font-1";
+  line-height: 0.8;
+}
+#heading span {
+  font-family: "font-2";
+}
+.right .btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2vw;
+  padding: 1.2vw 1vw;
+  border: 1px solid rgb(183, 170, 170);
+  transition: all 0.5s ease;
+  font-family: "font-1";
+}
+
+.right .btn:hover {
+  background-color: white;
+  color: #000;
+}

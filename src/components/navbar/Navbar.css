@@ -1,0 +1,42 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: black; */
+    overflow: hidden;
+    box-sizing: border-box;
+    color: white;
+    z-index: 99;
+}
+
+.heading-name h2{
+    font-family: 'font-1';
+    cursor: pointer;
+}
+.heading-name span{
+    font-family: 'font-2';
+}
+.list ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-family:"font-1" ;
+    cursor: pointer;
+}
+
+.inquries{
+    display: flex;
+    
+
+}
+.inquries p{
+    font-family: "font-1";
+    cursor: pointer;
+}
+.inquries img{
+    width: 1rem;
+    margin-bottom: 1rem;
+}
