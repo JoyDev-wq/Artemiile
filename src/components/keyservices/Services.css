@@ -1,0 +1,102 @@
+.services {
+  width: 100%;
+  /* height: 300vh; */
+  background-color: red;
+}
+.grid-1 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-auto-rows: 30rem;
+  border-bottom: 1px solid gray;
+}
+.box1 {
+  height: 100%;
+  position: relative;
+  border-right: 1px solid gray;
+}
+.inner-box {
+  height: 90%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  color: white;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+.inner-box:hover .circle {
+  background-color: #fff;
+  border: none;
+}
+.visible-text {
+  height: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+}
+.inner-box video {
+  height: 30rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+.inner-box:hover video {
+  opacity: 1;
+}
+.visible-text .circle {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.592);
+  transition: all linear 0.2s;
+}
+.visible-text .box-heading {
+  font-family: "font-1";
+  font-size: 1.8rem;
+}
+.box-heading .para {
+  font-size: 2.5rem;
+}
+.visible-text > h1 {
+  color: white;
+  font-family: "font-1";
+  font-size: 3rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr;
+  grid-auto-rows: 30rem;
+  border-bottom: 1px solid gray;
+}
+
+.grid-2 .box-1 {
+  height: 100%;
+  position: relative;
+  border-right: 1px solid gray;
+}
+
+.grid-3 {
+  /* margin-top: 12rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-auto-rows: 30rem;
+  border-bottom: 1px solid gray;
+}
+
+.grid-3 .box-1 {
+  height: 100%;
+  position: relative;
+  border-right: 1px solid gray;
+}

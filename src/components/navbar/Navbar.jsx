@@ -3,7 +3,7 @@ import arrow from '../../assets/arrow-inquiries.svg'
 import './Navbar.css'
 const Navbar = () => {
   return (
-    <div className='navbar'>
+    <div  data-scroll-section className='navbar'>
       <div className='heading-name'>
         <h2> <span>A</span>rtemii <span>L</span>ebedev</h2>
       </div>

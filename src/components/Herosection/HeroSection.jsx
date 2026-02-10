@@ -6,7 +6,7 @@ import arrow from '../../assets/hero-section/arrow-newest-2.svg'
 
 const HeroSection = () => {
   return (
-    <div className="hero-section">
+    <div  data-scroll-section className="hero-section">
       <div className="video-bg">
         <video src={video} autoPlay loop muted></video>
       </div>

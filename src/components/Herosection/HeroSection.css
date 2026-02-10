@@ -30,7 +30,9 @@
     font-size: 4rem;
     font-family: "font-1";
     font-weight: 300;
+    cursor: pointer;
 }
+
 
 .hero-content span{
     font-family: "font-2";

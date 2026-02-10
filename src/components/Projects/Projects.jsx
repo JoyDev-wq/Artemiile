@@ -29,7 +29,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="projects">
+    <div  data-scroll-section className="projects">
       <div className="left">
         {projects.map((item, idx) => (
           <div key={idx} className="project-map">
