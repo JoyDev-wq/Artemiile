@@ -1,5 +1,6 @@
 import "./App.css";
 import Exhibition from "./components/Exhibitions/Exhibition";
+import Footer from "./components/Footer/Footer";
 import HeroSection from "./components/Herosection/HeroSection";
 import Services from "./components/keyservices/Services";
 import Music from "./components/Music/Music";
@@ -16,6 +17,7 @@ function App() {
         <Music />
         <Services/>
         <Exhibition/>
+        <Footer/>
     </div>
   );
 }

@@ -9,7 +9,7 @@
     overflow: hidden;
     box-sizing: border-box;
     color: white;
-    z-index: 99;
+    z-index: 10;
 }
 
 .heading-name h2{
@@ -19,14 +19,48 @@
 .heading-name span{
     font-family: 'font-2';
 }
-.list ul{
+/* .list ul{
     display: flex;
     list-style: none;
     gap: 10px;
     font-family:"font-1" ;
     cursor: pointer;
+} */
+.list{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    font-size: 1.1rem;
+    font-family:"font-1" ;
+    overflow: hidden;
+}
+.list a{
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 7;
 }
 
+.list a .nav-link{
+    background: transparent;
+}
+.list a .hover-bg{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    z-index: 8;
+    top: 1.2rem;
+    left: 0;
+    opacity: 0;
+    background-color: rgb(128, 128, 128);
+    transition: all ease 0.6s;
+}
+.list a:hover .hover-bg{ 
+    opacity: 1;
+    top: 0;
+    background-color: rgba(181, 181, 181, 0.439);
+} 
 .inquries{
     display: flex;
     

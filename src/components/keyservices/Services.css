@@ -48,7 +48,7 @@
   object-position: center;
   opacity: 0;
   z-index: 1;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.6s linear;
 }
 .inner-box:hover video {
   opacity: 1;
@@ -59,7 +59,7 @@
   background-color: rgb(0, 0, 0);
   border-radius: 50%;
   border: 1px solid rgba(128, 128, 128, 0.592);
-  transition: all linear 0.2s;
+  transition: all linear 0.6s;
 }
 .visible-text .box-heading {
   font-family: "font-1";

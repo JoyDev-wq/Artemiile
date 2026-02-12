@@ -1,17 +1,110 @@
-.exhibition{
-    /* width: 100%; */
-    height: 100vh;
-    background-color: red;
-    padding-top: 8rem;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+.exhibition {
+  height: 120vh;
+  background-color: rgb(0, 0, 0);
+  padding-top: 8rem;
 }
 
-.ex-heading{
-    font-size: 6rem;
+.ex-heading {
+  font-size: 6rem;
+  font-family: "font-1";
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  color: white;
+}
+
+.ex-heading span {
+  font-family: "font-2";
+}
+
+.columns {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* gap: 1px; */
+  justify-content: center;
+  position: relative;
+}
+.column-1 {
+  width: 99.9%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.column-1:nth-child(2){
+    border-left: 1px solid gray;
+}
+.column-1:nth-child(3){
+    border-left: 1px solid gray;
+}
+.column-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+  transition: background 0.6s ease;
+}
+.column-text:hover {
+  background: transparent;
+}
+.column-text .column-heading {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+
+  color: white;
+  font-family: "font-1";
+}
+.column-text .date {
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-family: "font-1";
+  color: gray;
+  margin-left: 1rem;
+}
+.shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.3;
+  background-color: black;
+}
+
+.column-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.column-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.exb-text{
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.exb-text p{
+    padding: 0 4px;
+    width: max-content;
+    line-height: 3rem;
+    font-size: 2rem;
     font-family: "font-1";
+    background: white;
 }
 
-.ex-heading span{
-    font-family: "font-2";
+.exb-flex-para{
+    display: flex;
+    gap: 4px;
 }
